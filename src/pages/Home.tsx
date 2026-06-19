@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import '../App.css'
+import Hero from '@/sections/Hero'
+import StatsBar from '@/sections/StatsBar'
+import AboutSnippet from '@/sections/AboutSnippet'
+import Services from '@/sections/Services'
+import WhyChooseUs from '@/sections/WhyChooseUs'
+import FeaturedProjects from '@/sections/FeaturedProjects'
+import Testimonials from '@/sections/Testimonials'
+import Partners from '@/sections/Partners'
+import CTABanner from '@/sections/CTABanner'
 
 export default function Home() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
+    <main>
+      <Hero />
+      <StatsBar />
+      <AboutSnippet />
+      <Services />
+      <WhyChooseUs />
+      <FeaturedProjects />
+      <Testimonials />
+      <Partners />
+      <CTABanner />
+    </main>
   )
 }
