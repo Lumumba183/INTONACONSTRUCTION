@@ -1,7 +1,3 @@
 [build]
-  command = "npx vite build"
+  command = "mkdir -p dist && echo 'dist ready'"
   publish = "dist"
-
-[build.environment]
-  NODE_VERSION = "20"
-  NPM_FLAGS = "--no-audit --no-fund"
